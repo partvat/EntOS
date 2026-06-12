@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting Card</title>
+</head>
+<body>
+     <div class="card">
+         <div class="personalizer">
+            <div class="input-group">
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" placeholder="Enter your name">
+             </div>
+
+             <div class="input-group">
+                 <label for="user-message">Special Message</label>
+                 <textarea id="user-message" placeholder="Type something beautiful..."></textarea>
+             </div>
+
+             <button class="show-btn" onclick="showGreeting()">Show My Greeting</button>
+          </div>
+
+          <div id="current-greeting">
+              <h3><i>Welcome!</i></h3>
+              <p id="pre-view-message">Hello, World!</p>
+          </div>
+
+          <div id="date-display"></div>
+          <div id="message-box"></div>
+      </div>
+
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+
+       <script src="script.js"></script>
+</body>
+</html>
